@@ -1,0 +1,19 @@
+{
+  "name": "mlnav",
+  "version": "1.0.0",
+  "source": "src/index.ts",
+  "main": "dist/main.js",
+  "module": "dist/module.js",
+  "type": "module",
+  "scripts": {
+    "serve": "parcel serve demo/index.html",
+    "watch": "parcel watch",
+    "build": "parcel build"
+  },
+  "devDependencies": {
+    "parcel": "latest"
+  },
+  "dependencies": {
+    "lit": "^3.1.0"
+  }
+}
