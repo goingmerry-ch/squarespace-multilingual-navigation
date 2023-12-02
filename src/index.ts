@@ -1,5 +1,4 @@
-import { render } from 'lit';
-import {html, unsafeStatic} from 'lit/static-html.js'
+import { html, render } from 'lit';
 import {styleMap} from 'lit/directives/style-map.js'
 
 
@@ -56,10 +55,6 @@ export default class MlNav {
         </nav>
       `;
   }
-
-  // dropdown (el) {
-  //   console.log(el)
-  // }
 
   switcher () {
     const styles: {[elclass:string]: { [property: string]: string}} = {
