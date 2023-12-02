@@ -1,6 +1,6 @@
-import { html, render } from 'lit';
+import { html, render } from 'lit'
 import {styleMap} from 'lit/directives/style-map.js'
-
+import './lang/lang-flags.css'
 
 interface Link {
   label: string
@@ -22,21 +22,29 @@ export default class MlNav {
     this.links = [
       { label: 'Home', href: '/en/home'},
       { label: 'Services', href: '/en/services'}
-    ];
-    this.current = { lang: 'it', href: '/it/inizio'}
-    this.alternates = [
-      { lang: 'gb', href: '/en/home'},
-      { lang: 'fr', href: '/fr/home'},
-      { lang: 'sa', href: '/ar/home'},
-      { lang: 'es', href: '/es/inicio'},
-      
     ]
+    
+    //@ts-ignore
+    this.alternates = this.getAlternates()
+    //@ts-ignore
+    this.current = this.alternates.find((alternate) => (alternate.href === location.pathname || alternate.lang === document.documentElement.getAttribute('lang')))
   }
   
 
   getAlternates () {
       // get current alternates
-      // switcher
+      // Find all <link> elements with hreflang attribute
+      const hreflangElements = document.querySelectorAll('link[hreflang]')
+
+      // Extract href and hreflang attributes from each element
+      return Array.from(hreflangElements)
+      .map(el => {
+        return {
+            href: el.getAttribute('href'),
+            lang: el.getAttribute('hreflang')
+        }
+      })
+      .filter((item) => item.lang && item.href && item.lang !== 'x-default')
   }
   
     
@@ -53,16 +61,17 @@ export default class MlNav {
             `
           )}
         </nav>
-      `;
+      `
   }
 
   switcher () {
+    const bgLangPngUrl = new URL('./lang/lang-flags.png', import.meta.url).toString();
     const styles: {[elclass:string]: { [property: string]: string}} = {
       dropbtn: {
         'display': 'flex',
         'align-items': 'center',
-        background: 'transparent',
-        border: '2px',
+        'background': 'transparent',
+        'border': '2px',
         'border-color': 'white'
       },
       'dropdown': {
@@ -82,6 +91,11 @@ export default class MlNav {
         'padding': '12px 16px',
         'text-decoration': 'none',
         'display': 'block'
+      },
+      'langicon': {
+        'width': '25px',
+        'height': '15px',
+        'background-image': `url('${bgLangPngUrl})`
       },
       'flagIcon': {
         'display': 'flex',
@@ -103,9 +117,8 @@ export default class MlNav {
     return html`
         <div style=${styleMap(styles.dropdown)}>
         <button id="mlswitcher" style=${styleMap(styles.dropbtn)} >
-          <div style=${styleMap(styles.flagIcon)} >
-            <img style=${styleMap(styles.flagIconImg)}  src="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.0.0/flags/1x1/${this.current.lang}.svg" />
-          </div>
+          <div class="lang-icon-${this.current.lang}" style=${styleMap(styles.langicon)} ></div>
+
           <div style="display: inline-block; fill: var(--navigationLinkColor, white)">
             <svg fill="current" width="30px" height="30px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M759.2 419.8L697.4 358 512 543.4 326.6 358l-61.8 61.8L512 667z"/></svg>
           </div>
@@ -113,9 +126,7 @@ export default class MlNav {
         <div id="mlswitcher-content" style=${styleMap(styles['dropdown-content'])}>
         ${this.alternates.map((alternate) => html`
           <a style=${styleMap(styles['dropdown-content-link'])} href="${alternate.href}">
-            <div style=${styleMap(styles.flagIcon)} >
-              <img style=${styleMap(styles.flagIconImg)} src="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.0.0/flags/1x1/${alternate.lang}.svg" />
-            </div>
+            <div class="lang-icon-${alternate.lang}" style=${styleMap(styles.langicon)} ></div>
           </a>
         `)}
           
@@ -133,10 +144,11 @@ export default class MlNav {
           ${this.switcher()}
         </div>
       </div>
-    `;
+    `
   }
 
   renderTopNav (container: HTMLElement, anchor: HTMLElement | undefined) {
+    console.log('switche', this.current)
     render (this.topNav(), container, anchor)
     document.getElementById('mlswitcher')?.addEventListener('click', () => {
       const el = document.getElementById('mlswitcher-content')
