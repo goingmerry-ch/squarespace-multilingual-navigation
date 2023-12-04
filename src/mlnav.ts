@@ -189,11 +189,11 @@ export default class MlNav {
     }
 
     // language switchers
-    const carts = document.querySelectorAll('.header-actions-action--cart')
-    carts.forEach((cart) => {
+    const headerActions = document.querySelectorAll('.header-actions')
+    headerActions.forEach((headerAction) => {
       const wrapper = document.createElement('div')
       render(this.switcher(), wrapper)
-      cart.parentNode.replaceChild(wrapper, cart)
+      headerAction.insertAdjacentElement('afterbegin',wrapper)
     })
     
 
