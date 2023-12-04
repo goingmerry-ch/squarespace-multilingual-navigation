@@ -13,7 +13,7 @@
   "scripts": {
     "serve": "parcel serve demo/index.html",
     "watch": "parcel watch",
-    "build": "parcel build"
+    "build": "parcel build --no-cache"
   },
   "devDependencies": {
     "parcel": "latest"
