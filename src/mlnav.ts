@@ -1,5 +1,6 @@
 import { html, render } from 'lit-html'
 import {styleMap} from 'lit/directives/style-map.js'
+import languages from './languages-native.json' assert {type: 'json'}
 
 interface Link {
   label: string
@@ -19,13 +20,6 @@ interface BaseNavigation {
   }[]
 }
 
-const languages = {
-  "en": "English",
-  "fr": "Français",
-  "it": "Italiano",
-  "es": "Español",
-  "ar": "العربية",
-}
 
 export type { BaseNavigation}
 
