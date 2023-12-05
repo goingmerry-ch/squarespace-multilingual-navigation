@@ -2,14 +2,15 @@
   "name": "mlnav",
   "version": "1.0.0",
   "source": "src/index.ts",
-  "main": "dist/main.js",
+  "browser": "dist/main.js",
   "targets": {
-    "main": {
+    "browser": {
       "context": "browser",
        "includeNodeModules": true,
        "isLibrary": true
     }
   },
+  "type": "module",
   "scripts": {
     "serve": "parcel serve demo/index.html",
     "watch": "parcel watch",
