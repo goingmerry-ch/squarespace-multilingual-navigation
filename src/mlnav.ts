@@ -1,6 +1,7 @@
 import { html, render } from 'lit-html'
 import {styleMap} from 'lit/directives/style-map.js'
 import languages from './languages-native.json' assert {type: 'json'}
+import rtl from './languages-rtl.json' assert {type: 'json'}
 
 interface Link {
   label: string
@@ -200,6 +201,11 @@ export default class MlNav {
         }
       })
     })
+
+    // add rtl direction
+    if (rtl.includes(this.current?.lang)) {
+      document.dir = 'rtl';
+    }
 
   }
 
