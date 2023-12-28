@@ -4,6 +4,11 @@
   "source": "src/index.ts",
   "browser": "dist/main.js",
   "files": ["dist/main.js","dist/main.js.map"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/goingmerry-ch/squarespace-multilingual-navigation.git"
+  },
+  "license": "MIT",
   "targets": {
     "browser": {
       "context": "browser",
