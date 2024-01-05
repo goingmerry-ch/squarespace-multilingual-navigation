@@ -190,7 +190,10 @@ export default class MlNav {
       render(this.switcher(), wrapper)
       headerAction.insertAdjacentElement('afterbegin',wrapper)
     })
-    
+    const mobileActions = document.querySelector('.header-display-mobile > .header-actions') as HTMLElement
+    if (mobileActions) {
+      mobileActions.style.display = "flex"
+    }
 
     const switchers = document.querySelectorAll('.mlswitcher')
     switchers.forEach((switcher) => {
@@ -204,8 +207,21 @@ export default class MlNav {
 
     // add rtl direction
     if (rtl.includes(this.current?.lang)) {
-      document.dir = 'rtl';
+        // Define the tags you want to target
+        const tagsToTarget = ['span', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p', 'a', 'li']
+      
+        // Create a selector string for the tags
+        const selector = tagsToTarget.join(',')
+      
+        // Get all elements matching the specified tags
+        const textElements = document.querySelectorAll(selector)
+      
+        // Set the 'dir' attribute to 'rtl' for each element
+        textElements.forEach((element) => {
+          (element as HTMLElement).dir = 'rtl';
+        })
     }
+
 
   }
 

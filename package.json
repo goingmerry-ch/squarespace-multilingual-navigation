@@ -1,6 +1,6 @@
 {
   "name": "@goingmerry/squarespace-multilingual-navigation",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "source": "src/index.ts",
   "browser": "dist/main.js",
   "files": ["dist/main.js","dist/main.js.map"],
@@ -18,7 +18,7 @@
   },
   "type": "module",
   "scripts": {
-    "serve": "parcel serve demo/index.html",
+    "serve": "parcel serve demo/layout_right/index.html",
     "watch": "parcel watch",
     "build": "parcel build --no-cache",
     "publish": "npm run build && npm publish --access public"
