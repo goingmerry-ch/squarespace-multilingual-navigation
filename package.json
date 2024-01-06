@@ -3,7 +3,10 @@
   "version": "1.0.3",
   "source": "src/index.ts",
   "browser": "dist/main.js",
-  "files": ["dist/main.js","dist/main.js.map"],
+  "files": [
+    "dist/main.js",
+    "dist/main.js.map"
+  ],
   "description": "javascript package to enable multilingual navigation on squarespace",
   "repository": {
     "type": "git",
@@ -13,8 +16,8 @@
   "targets": {
     "browser": {
       "context": "browser",
-       "includeNodeModules": true,
-       "isLibrary": true
+      "includeNodeModules": true,
+      "isLibrary": true
     }
   },
   "type": "module",
@@ -22,10 +25,13 @@
     "serve": "parcel serve demo/layout_right/index.html",
     "watch": "parcel watch",
     "build": "parcel build --no-cache",
-    "publish": "npm run build && npm publish --access public"
+    "publish": "npm run build && npm publish --access public",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
   },
   "devDependencies": {
-    "parcel": "latest"
+    "parcel": "latest",
+    "vuepress": "^1.9.10"
   },
   "dependencies": {
     "lit": "^3.1.0",

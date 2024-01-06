@@ -5,4 +5,7 @@ dist
 yarn-error.log
 demo
 .DS_Store
+.temp
+.cache
+
 
