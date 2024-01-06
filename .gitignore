@@ -3,3 +3,6 @@ overrides
 node_modules
 dist
 yarn-error.log
+demo
+.DS_Store
+
