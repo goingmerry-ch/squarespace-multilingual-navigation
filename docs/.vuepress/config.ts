@@ -1,7 +1,7 @@
 import { defineConfig } from "vuepress/config";
 
 export default defineConfig({
-  base: process.env.GITHUB_REPOSITORY ? `/${ process.env.GITHUB_REPOSITORY.split('/')[1] }/` || '/',
+  base: process.env.GITHUB_REPOSITORY ? `/${ process.env.GITHUB_REPOSITORY.split('/')[1] }/` : '/',
   locales: {
     '/': {
       lang: 'en',
