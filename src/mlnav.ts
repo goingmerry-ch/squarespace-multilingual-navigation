@@ -193,6 +193,16 @@ export default class MlNav {
     const mobileActions = document.querySelector('.header-display-mobile > .header-actions') as HTMLElement
     if (mobileActions) {
       mobileActions.style.display = "flex"
+      const elementRect = mobileActions.getBoundingClientRect();
+      const elementCenterX = elementRect.left + elementRect.width / 2;
+      const viewportWidth = window.innerWidth;
+      if (elementCenterX < viewportWidth / 2) {
+        // element is on the left
+        mobileActions.style.marginRight = "-4.5rem"
+      } else {
+        // element is on the right
+        mobileActions.style.marginLeft = "-4.5rem"
+      }
     }
 
     const switchers = document.querySelectorAll('.mlswitcher')
