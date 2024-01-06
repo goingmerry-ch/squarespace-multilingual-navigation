@@ -1,9 +1,10 @@
 {
   "name": "@goingmerry/squarespace-multilingual-navigation",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "source": "src/index.ts",
   "browser": "dist/main.js",
   "files": ["dist/main.js","dist/main.js.map"],
+  "description": "javascript package to enable multilingual navigation on squarespace",
   "repository": {
     "type": "git",
     "url": "https://github.com/goingmerry-ch/squarespace-multilingual-navigation.git"
