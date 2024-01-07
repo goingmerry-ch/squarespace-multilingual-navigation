@@ -17,3 +17,5 @@ description: Frequently asked questions and answers
 
 ### What about the multilingual footer ?
 
+
+### Which language url strategy should I use ? {#faq-language-url-strategy}

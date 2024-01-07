@@ -29,64 +29,96 @@ To satisfy this constraint. There are two strategies to organize links
 
 ### Default Language
 
-This is the recommended strategy considering all the limitations for Squarespace.
-
 The website would be organized as such:
 
-Default language pages (example here for english):
-    - www.example.com/
-    - www.example.com/services
-    - www.example.com/about
+#### Default language pages (example here for english):
+> www.example.com/  
+> www.example.com/services  
+> www.example.com/about  
+  
+#### Other language pages (example here for french)  
+> www.example.com/fr/  
+> www.example.com/fr/services  
+> www.example.com/fr/a-propos  
 
-Other language pages (example here for french)
-    - www.example.com/fr/
-    - www.example.com/fr/services
-    - www.example.com/fr/a-propos
 
-
-Benefits:
+**Benefit**: 
 - no need for a special landing page
 
 
-Drawbacks:
+**Drawback**:  
 - more likely to have visitors landing on the homepage which could be the wrong language for them
-
+- not all languages are equal
 
 
 
 ### No Default Language
 
 
-This strategy is fine but would not recommend it as you might loose more people on the landing page.
-This is how Squarespace recommends setting up multilingual sites manualy
-
 The website would be organized as such:
 
-Landing page:
-    - www.example.com/
-This landing page would be language agnostic and provide the option for the user to choose a language
+#### Landing page:
+> www.example.com/  
 
-Default language pages (example here for english):
-    - www.example.com/
-    - www.example.com/services
-    - www.example.com/about
+*This landing page would be language agnostic and provide the option for the user to choose a language*
 
-Other language pages (example here for french)
-    - www.example.com/fr/
-    - www.example.com/fr/services
-    - www.example.com/fr/a-propos
+#### Default language pages (example here for english):
+> www.example.com/en/  
+> www.example.com/en/services  
+> www.example.com/en/about  
+
+#### Other language pages (example here for french)
+> www.example.com/fr/  
+> www.example.com/fr/services  
+> www.example.com/fr/a-propos  
 
 
+For more information check [FAQ](/en/faq#faq-language-url-strategy)
 
 
 
 
 ## Remove linked pages
 
-Because the navigation will be handled by the tool. You should remove the linked page navigation.
+Because the navigation will be handled by the tool. You should remove the linked page navigation. 
+
+Also I would recommend to nicely organize the pages into folder.
+
+It should look like that
+
+![How it should look like](../../assets/squarespace-navigation.png)
 
 
-## Add a menu
+## Edit menu leyout
+
+The tool should adapt to all the menu alternatives proposed by Squarespace.
+The language switcher will be placed where the action buttons are
+
+- Edit any page. 
+- Hover the navigation
+- Click Edit Site Header
+- Layout
+
+Then choose a layout. Do this for both a desktop and mobile.
+
+>The desktop menu layout options:  
+>
+>![squarespace desktop menu layout](../../assets/desktop-menu-layout.png)  
+
+>The mobile menu layout options:  
+>
+>![squarespace mobile menu layout](../../assets/mobile-menu-layout.png)  
+
+
+---
+If it does not work, please [contact us](../contact) with a link to a site or explain the issue. We will fix it.
+
+
+
+
+
+
+
 
 
 
