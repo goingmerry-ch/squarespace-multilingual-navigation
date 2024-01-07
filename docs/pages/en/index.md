@@ -2,6 +2,14 @@
 layout: home
 
 lang: en
+alternates:
+  - hreflang: en
+    href: /en
+  - hreflang: fr
+    href: /fr
+  - hreflang: x-default
+    href: /en
+
 title: Home
 description: Documentation homepage for Squarespace Multilingual Navigation easy and free script
 
@@ -14,7 +22,7 @@ hero:
   actions:
     - theme: brand
       text: Get Started →
-      link: /guide/
+      link: ./guide
 
 features:
   - title: Navigation

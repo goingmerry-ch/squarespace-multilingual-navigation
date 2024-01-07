@@ -1,14 +1,23 @@
+import { HeadConfig } from 'vitepress'
+
+const base = process.env.GITHUB_REPOSITORY ? `/${ process.env.GITHUB_REPOSITORY.split('/')[1] }/` : '/'
+const fullBase = 'https://' + process.env.GITHUB_REPOSITORY_OWNER + '.github.io' + base 
 
 export default {
-  base: process.env.GITHUB_REPOSITORY ? `/${ process.env.GITHUB_REPOSITORY.split('/')[1] }/` : '/',
+  base: base,
+  srcDir: 'pages',
   locales: {
-    root: {
+    en: {
       label: 'English',
       lang: 'en',
+      dir: 'en',
+      link: '/en/guide'
     },
     fr: {
       label: 'Français',
       lang: 'fr',
+      dir: 'fr',
+      link: '/fr/guide'
     },
   },
   head: [
@@ -26,22 +35,39 @@ export default {
       gtag('config', '${process.env.VITE_GOOGLE_ANALYTICS_ID}');`
     ] : []
   ],
+  async transformHead({ pageData }) {
+    const head: HeadConfig[] = []
+    const alternates = pageData.frontmatter.alternates
+    if (alternates) {
+      alternates.forEach(({href, hreflang}) => {
+        head.push([
+          'link',
+          {
+            rel: 'alternate',
+            href: fullBase + href,
+            hreflang: hreflang
+          }
+        ])
+      })
+    }
+    return head
+  },
   themeConfig: {
     siteTitle: 'Squarespace Multilingual Navigation',
     logo: '/logo.png',
     nav: [
-      { text: 'Guide', link: '/guide' },
-      { text: 'Demo', link: '/demo' },
-      { text: 'Github', link: 'https://example.com' }
+      { text: 'Guide', link: './guide' },
+      { text: 'About', link: './about' },
+      { text: 'Github', link: 'https://github.com/goingmerry-ch/squarespace-multilingual-navigation' }
     ],
     sidebar: {
-      '/guide': [
+      '/en/guide': [
         {
           text: 'Guide',
           items: [
-            { text: 'Hreflangs', link: '/guide/' },
-            { text: 'Scripts', link: '/guide/' },
-            { text: 'Navigation', link: '/guide/' }
+            { text: 'Hreflangs', link: './en/guide' },
+            { text: 'Scripts', link: './en/guide' },
+            { text: 'Navigation', link: './en/guide' }
           ]
         }
       ],

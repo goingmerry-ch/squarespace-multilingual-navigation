@@ -2,6 +2,14 @@
 layout: home
 
 lang: fr
+alternates:
+  - hreflang: en
+    href: /en
+  - hreflang: fr
+    href: /fr
+  - hreflang: x-default
+    href: /en
+
 title: Acceuil
 description: Site de documentation pour un outil de navigation multilingue sur Squarespace
 
@@ -14,7 +22,7 @@ hero:
   actions:
     - theme: brand 
       text: Guide →
-      link: /guide/
+      link: ./guide
 
 features:
   - title: Navigation
