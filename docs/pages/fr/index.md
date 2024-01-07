@@ -4,11 +4,11 @@ layout: home
 lang: fr
 alternates:
   - hreflang: en
-    href: /en
+    href: en
   - hreflang: fr
-    href: /fr
+    href: fr
   - hreflang: x-default
-    href: /en
+    href: en
 
 title: Acceuil
 description: Site de documentation pour un outil de navigation multilingue sur Squarespace

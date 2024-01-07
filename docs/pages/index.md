@@ -1,7 +1,8 @@
 ---
 layout: home
 
-lang: en
+navbar: false
+
 title: Home
 description: Documentation homepage for Squarespace Multilingual Navigation easy and free script
 

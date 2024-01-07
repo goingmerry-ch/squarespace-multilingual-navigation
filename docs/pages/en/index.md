@@ -4,11 +4,11 @@ layout: home
 lang: en
 alternates:
   - hreflang: en
-    href: /en
+    href: en
   - hreflang: fr
-    href: /fr
+    href: fr
   - hreflang: x-default
-    href: /en
+    href: en
 
 title: Home
 description: Documentation homepage for Squarespace Multilingual Navigation easy and free script
