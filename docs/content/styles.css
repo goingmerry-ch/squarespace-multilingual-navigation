@@ -1,0 +1,7 @@
+/* make title fit the sidebar width */
+.title {
+    max-width: 300px;
+    text-wrap: pretty;
+    font-size: smaller;
+    background-color: white;
+}

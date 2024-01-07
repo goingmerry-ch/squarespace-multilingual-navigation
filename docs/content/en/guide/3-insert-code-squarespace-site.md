@@ -1,31 +1,26 @@
 ---
-lang: fr
+layout: doc
+
+lang: en
+alternates:
+  - hreflang: en
+    href: en/guide/2-insert-code-squarespace-site
+  - hreflang: fr
+    href: fr/guide/2-inserer-code-squarespace
+  - hreflang: x-default
+    href: en/guide/2-insert-code-squarespace-site
+
 title: Guide
-description: Étape par étape comment ajouter une navigation multilingue à un site web Squarespace
+description: Step by step how to add multilingual navigation to a squarespace website
 ---
 
-# Guide
-
-[[toc]]
-Voici la manière la plus simple et gratuite d'ajouter une navigation multilingue à votre site.
-
-Cela se déroule en 3 étapes :
-
-1. Ajouter un menu
-2. Injecter un extrait de code
-3. Mettre à jour l'attribut hreflang des pages
+# Code insertion
 
 
-Allons dans le processus
+Add this javascript snippet to you site.
 
-Ajoutez cet extrait de javascript à votre site.
-
-Si vous êtes membre premium :
-Vous pouvez ajouter ceci sous Site Web > Outils du Site Web > Injection de Code
-
-Si vous êtes membre gratuit ou de base :
-Vous devrez l'ajouter dans chaque page en éditant le pied de page, en ajoutant du code personnalisé.
-
+If you are a premimum member:
+You can add this under Website > Website Tools > Code Injection
 
 
 

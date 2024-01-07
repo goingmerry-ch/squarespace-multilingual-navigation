@@ -26,12 +26,13 @@
     "watch": "parcel watch",
     "build": "parcel build --no-cache",
     "publish": "npm run build && npm publish --access public",
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
   },
   "devDependencies": {
     "parcel": "latest",
-    "vuepress": "^1.9.10"
+    "vitepress": "^1.0.0-rc.35"
   },
   "dependencies": {
     "lit": "^3.1.0",
