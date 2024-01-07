@@ -5,19 +5,40 @@ const fullBase = 'https://' + process.env.GITHUB_REPOSITORY_OWNER + '.github.io'
 
 export default {
   base: base,
-  srcDir: 'pages',
+  ignoreDeadLinks: true,
+  srcDir: 'content',
+  title: 'Squarespace Mutlingual Navigation',
+  description: 'An easy and free multilingual navigation for Squarespace',
   locales: {
     en: {
       label: 'English',
       lang: 'en',
       dir: 'en',
-      link: '/en/guide'
+      link: '/en/guide',
+      title: 'Squarespace Mutlingual Navigation',
+      description: 'Easy and free implementation of multilingual navigation for Squarespace',
+      themeConfig: {
+        nav: [
+          { text: 'Guide', link: '/en/guide/' },
+          { text: 'About', link: '/en/about' },
+          { text: 'Github', link: 'https://github.com/goingmerry-ch/squarespace-multilingual-navigation' }
+        ],
+      }
     },
     fr: {
       label: 'Français',
       lang: 'fr',
       dir: 'fr',
-      link: '/fr/guide'
+      link: '/fr/guide',
+      title: 'Navigation Multilingue sur Squarespace',
+      description: 'Implementez une navigation multilingue sur Squarespace gratuitement et facilement',
+      themeConfig: {
+        nav: [
+          { text: 'Guide', link: './guide' },
+          { text: 'A Propos', link: './a-propos' },
+          { text: 'Github', link: 'https://github.com/goingmerry-ch/squarespace-multilingual-navigation' }
+        ],
+      }
     },
   },
   head: [

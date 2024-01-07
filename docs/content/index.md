@@ -21,12 +21,16 @@ hero:
       link: ./fr/guide
 
 features:
-  - title: En
-    details: Easily add navigation adapted to the choosen language of your visitor
-  - title: Language Switcher
-    details: The tool includes a
-  - title: Easy and Free
-    details: You don't need to know how to code to add this feature. The tool code itself is hosted on unpkg.com so it is not possible to modify it or delete it. It's forever available
+  - title: English Documentation
+    details: Frea and easy multilingual navigation for Squarespace
+    link: ./en/guide
+    linkText: Get Started
+
+  - title: FR
+    details: Ajoutez de manière facile et gratuite une navigation multilingue sur votre site Squarespace
+    link: ./fr/guide
+    linkText: Instructions
+
 
 ---
 
