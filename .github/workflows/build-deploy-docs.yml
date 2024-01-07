@@ -41,7 +41,7 @@ jobs:
           yarn docs:build
           touch docs/.vitepress/dist/.nojekyll
         env:
-          GOOGLE_ANALYTICS_ID: ${{ GOOGLE_ANALYTICS_ID }}
+          GOOGLE_ANALYTICS_ID: ${{ vars.GOOGLE_ANALYTICS_ID }}
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
