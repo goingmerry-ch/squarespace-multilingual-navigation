@@ -23,12 +23,12 @@ hero:
 features:
   - title: English Documentation
     details: Frea and easy multilingual navigation for Squarespace
-    link: ./en/guide
+    link: ./en/guide/
     linkText: Get Started
 
-  - title: FR
+  - title: Documentation en Français
     details: Ajoutez de manière facile et gratuite une navigation multilingue sur votre site Squarespace
-    link: ./fr/guide
+    link: ./fr/guide/
     linkText: Instructions
 
 

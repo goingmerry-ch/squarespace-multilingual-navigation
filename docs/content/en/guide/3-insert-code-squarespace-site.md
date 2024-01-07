@@ -4,11 +4,11 @@ layout: doc
 lang: en
 alternates:
   - hreflang: en
-    href: en/guide
+    href: en/guide/2-insert-code-squarespace-site
   - hreflang: fr
-    href: fr/guide
+    href: fr/guide/2-inserer-code-squarespace
   - hreflang: x-default
-    href: en/guide
+    href: en/guide/2-insert-code-squarespace-site
 
 title: Guide
 description: Step by step how to add multilingual navigation to a squarespace website

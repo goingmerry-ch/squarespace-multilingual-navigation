@@ -14,12 +14,13 @@ export default {
       label: 'English',
       lang: 'en',
       dir: 'en',
-      link: '/en/guide',
+      link: '/en/guide/',
       title: 'Squarespace Mutlingual Navigation',
       description: 'Easy and free implementation of multilingual navigation for Squarespace',
       themeConfig: {
         nav: [
           { text: 'Guide', link: '/en/guide/' },
+          { text: 'FAQ', link: '/en/faq' },
           { text: 'About', link: '/en/about' },
           { text: 'Github', link: 'https://github.com/goingmerry-ch/squarespace-multilingual-navigation' }
         ],
@@ -29,13 +30,14 @@ export default {
       label: 'Français',
       lang: 'fr',
       dir: 'fr',
-      link: '/fr/guide',
+      link: '/fr/guide/',
       title: 'Navigation Multilingue sur Squarespace',
       description: 'Implementez une navigation multilingue sur Squarespace gratuitement et facilement',
       themeConfig: {
         nav: [
-          { text: 'Guide', link: './guide' },
-          { text: 'A Propos', link: './a-propos' },
+          { text: 'Guide', link: '/fr/guide/' },
+          { text: 'Questions Frequentes', link: '/fr/questions-frequentes' },
+          { text: 'A Propos', link: '/fr/a-propos' },
           { text: 'Github', link: 'https://github.com/goingmerry-ch/squarespace-multilingual-navigation' }
         ],
       }
@@ -78,27 +80,30 @@ export default {
     logo: '/logo.png',
     nav: [
       { text: 'Guide', link: './guide' },
+      { text: 'FAQ', link: './faq' },
       { text: 'About', link: './about' },
       { text: 'Github', link: 'https://github.com/goingmerry-ch/squarespace-multilingual-navigation' }
     ],
     sidebar: {
-      '/en/guide': [
+      '/en/guide/': [
         {
           text: 'Guide',
           items: [
-            { text: 'Hreflangs', link: './en/guide' },
-            { text: 'Scripts', link: './en/guide' },
-            { text: 'Navigation', link: './en/guide' }
+            { text: 'Quick Start', link: '/en/guide/1-quick-start' },
+            { text: 'Preparation', link: '/en/guide/2-prepare-squarespace-site' },
+            { text: 'Code Insertion', link: '/en/guide/3-insert-code-squarespace-site' },
+            { text: 'Alternates', link: '/en/guide/4-add-alternate-languages' }
           ]
         }
       ],
-      '/fr/guide': [
+      '/fr/guide/': [
         {
           text: 'Guide',
           items: [
-            { text: 'Hreflangs', link: '/fr/guide/' },
-            { text: 'Scripts', link: '/fr/guide/' },
-            { text: 'Navigation', link: '/fr/guide/' }
+            { text: 'Demarrage Rapide', link: '/fr/guide/1-demarrage-rapide' },
+            { text: 'Preparation', link: '/fr/guide/2-preparation-site-squarespace' },
+            { text: 'Insertion', link: '/fr/guide/3-inserer-code-squarespace' },
+            { text: 'Alternates', link: '/fr/guide/4-ajouter-langues-alternatives' }
           ]
         }
       ]

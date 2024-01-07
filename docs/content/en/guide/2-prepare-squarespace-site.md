@@ -4,11 +4,11 @@ layout: doc
 lang: en
 alternates:
   - hreflang: en
-    href: en/guide/prepare-squarespace-site
+    href: en/guide/3-prepare-squarespace-site
   - hreflang: fr
-    href: fr/guide/prepare-site-squarespace
+    href: fr/guide/3-preparation-site-squarespace
   - hreflang: x-default
-    href: en/guide/prepare-squarespace-site
+    href: en/guide/3-preparation-squarespace-site
 
 title: Guide - Preepare Squarespace site
 description: How to prepare a squarespace website to add multilingual navigation

@@ -22,7 +22,7 @@ hero:
   actions:
     - theme: brand
       text: Get Started →
-      link: ./guide
+      link: ./guide/
 
 features:
   - title: Navigation
