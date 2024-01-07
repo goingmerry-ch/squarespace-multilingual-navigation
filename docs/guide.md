@@ -1,4 +1,6 @@
 ---
+layout: doc
+
 lang: en
 title: Guide
 description: Step by step how to add multilingual navigation to a squarespace website
