@@ -13,8 +13,8 @@ hero:
   tagline: Ajoutez plusieurs langues de  manière gratuite et simple votre site Squarespace
   actions:
     - theme: brand 
-      actionText: Guide →
-      actionLink: /guide/
+      text: Guide →
+      link: /guide/
 
 features:
   - title: Navigation
