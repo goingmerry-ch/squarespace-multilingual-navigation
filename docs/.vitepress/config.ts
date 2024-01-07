@@ -12,18 +12,18 @@ export default {
     },
   },
   head: [
-    process.env.GOOGLE_ANALYTICS_ID ? 
+    process.env.VITE_GOOGLE_ANALYTICS_ID ? 
     [
       'script',
-      { async: '', src: `https://www.googletagmanager.com/gtag/js?id=${process.env.GOOGLE_ANALYTICS_ID}` }
+      { async: '', src: `https://www.googletagmanager.com/gtag/js?id=${process.env.VITE_GOOGLE_ANALYTICS_ID}` }
     ] : [],
-    process.env.GOOGLE_ANALYTICS_ID ? [
+    process.env.VITE_GOOGLE_ANALYTICS_ID ? [
       'script',
       {},
       `window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', '${process.env.GOOGLE_ANALYTICS_ID}');`
+      gtag('config', '${process.env.VITE_GOOGLE_ANALYTICS_ID}');`
     ] : []
   ],
   themeConfig: {
