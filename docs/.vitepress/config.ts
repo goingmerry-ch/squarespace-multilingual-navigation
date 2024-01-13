@@ -14,14 +14,13 @@ export default {
       label: 'English',
       lang: 'en',
       dir: 'en',
-      link: '/en/guide/',
+      link: '/en/',
       title: 'Squarespace Mutlingual Navigation',
       description: 'Easy and free implementation of multilingual navigation for Squarespace',
       themeConfig: {
         nav: [
           { text: 'Guide', link: '/en/guide/' },
           { text: 'FAQ', link: '/en/faq' },
-          { text: 'About', link: '/en/about' },
           { text: 'Github', link: 'https://github.com/goingmerry-ch/squarespace-multilingual-navigation' }
         ],
       }
@@ -30,14 +29,13 @@ export default {
       label: 'Français',
       lang: 'fr',
       dir: 'fr',
-      link: '/fr/guide/',
+      link: '/fr/',
       title: 'Navigation Multilingue sur Squarespace',
       description: 'Implementez une navigation multilingue sur Squarespace gratuitement et facilement',
       themeConfig: {
         nav: [
           { text: 'Guide', link: '/fr/guide/' },
           { text: 'Questions Frequentes', link: '/fr/questions-frequentes' },
-          { text: 'A Propos', link: '/fr/a-propos' },
           { text: 'Github', link: 'https://github.com/goingmerry-ch/squarespace-multilingual-navigation' }
         ],
       }
@@ -78,12 +76,6 @@ export default {
   themeConfig: {
     siteTitle: 'Squarespace Multilingual Navigation',
     logo: '/logo.png',
-    nav: [
-      { text: 'Guide', link: './guide' },
-      { text: 'FAQ', link: './faq' },
-      { text: 'About', link: './about' },
-      { text: 'Github', link: 'https://github.com/goingmerry-ch/squarespace-multilingual-navigation' }
-    ],
     sidebar: {
       '/en/guide/': [
         {
