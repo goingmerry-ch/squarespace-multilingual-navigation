@@ -15,20 +15,20 @@ hero:
   actions:
     - theme: brand
       text: English
-      link: ./en/guide
+      link: /en/guide/
     - theme: brand
       text: Francais
-      link: ./fr/guide
+      link: /fr/guide/
 
 features:
   - title: English Documentation
     details: Frea and easy multilingual navigation for Squarespace
-    link: ./en/guide/
+    link: /en/guide/
     linkText: Get Started
 
   - title: Documentation en Français
     details: Ajoutez de manière facile et gratuite une navigation multilingue sur votre site Squarespace
-    link: ./fr/guide/
+    link: /fr/guide/
     linkText: Instructions
 
 
