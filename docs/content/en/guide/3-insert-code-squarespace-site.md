@@ -24,8 +24,9 @@ You can add this under Website > Website Tools > Code Injection
 
 
 
-```js
+```html
 <script>
+    // this manages the header navigation links
     _MLNAV_BASE_NAVIGATION = {
         en: [
           { label: 'Home', href: '/en/home' },
@@ -43,8 +44,16 @@ You can add this under Website > Website Tools > Code Injection
         ]
     }
 
+    // this manages the logo link  back to the homepage
+    _MLNAV_HOME = {
+      en: '/en/home',
+      fr: '/fr/acceuil'
+    }
+
   </script>
-  <script type="module" src="https://unpkg.com/@goingmerry/squarespace-multilingual-navigation@1.0.3/dist/main.js"></script>
+
+
+  <script type="module" src="https://unpkg.com/@goingmerry/squarespace-multilingual-navigation@1.0.5/dist/main.js"></script>
   <style>
 ```
 

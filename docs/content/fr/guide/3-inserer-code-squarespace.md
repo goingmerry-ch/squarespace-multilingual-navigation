@@ -21,8 +21,9 @@ Ajoutez ce fragment de code JavaScript à votre site.
 Si vous êtes membre premium :
 Vous pouvez l'ajouter dans Site Web > Outils du site > Injection de code
 
-```js
+```html
 <script>
+    // ce code gere les liens de la navigation en en-tete
     _MLNAV_BASE_NAVIGATION = {
         en: [
           { label: 'Home', href: '/en/home' },
@@ -40,8 +41,16 @@ Vous pouvez l'ajouter dans Site Web > Outils du site > Injection de code
         ]
     }
 
+    // ce code gère le lien du logo (vers la homepage de la langue)
+    _MLNAV_HOME = {
+      en: '/en/home',
+      fr: '/fr/acceuil'
+    }
+
   </script>
-  <script type="module" src="https://unpkg.com/@goingmerry/squarespace-multilingual-navigation@1.0.3/dist/main.js"></script>
+
+
+  <script type="module" src="https://unpkg.com/@goingmerry/squarespace-multilingual-navigation@1.0.5/dist/main.js"></script>
   <style>
 ```
 
