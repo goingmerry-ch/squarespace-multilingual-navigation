@@ -1,7 +1,7 @@
 import { HeadConfig } from 'vitepress'
 
 const base = process.env.GITHUB_REPOSITORY ? `/${ process.env.GITHUB_REPOSITORY.split('/')[1] }/` : '/'
-const fullBase = 'https://' + process.env.GITHUB_REPOSITORY_OWNER + '.github.io' + base 
+const fullBase = 'https://' + process.env.VITE_HOSTNAME + base 
 
 export default {
   base: base,
@@ -9,6 +9,9 @@ export default {
   srcDir: 'content',
   title: 'Squarespace Mutlingual Navigation',
   description: 'An easy and free multilingual navigation for Squarespace',
+  sitemap: {
+    hostname: fullBase
+  },
   locales: {
     en: {
       label: 'English',
@@ -45,7 +48,7 @@ export default {
     process.env.VITE_GOOGLE_ANALYTICS_ID ? 
     [
       'script',
-      { async: '', src: `https://www.googletagmanager.com/gtag/js?id=${process.env.VITE_GOOGLE_ANALYTICS_ID}` }
+      { async: '', src: `https://${ process.env.VITE_GOOGLE_TAG_MANAGER }/gtag/js?id=${process.env.VITE_GOOGLE_ANALYTICS_ID}` }
     ] : [],
     process.env.VITE_GOOGLE_ANALYTICS_ID ? [
       'script',

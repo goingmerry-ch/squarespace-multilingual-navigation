@@ -43,6 +43,8 @@ jobs:
           yarn docs:build
           touch docs/.vitepress/dist/.nojekyll
         env:
+          VITE_HOSTNAME: ${{ vars.HOSTNAME }}
+          VITE_GOOGLE_TAG_MANAGER: ${{ vars.GOOGLE_TAG_MANAGER }}
           VITE_GOOGLE_ANALYTICS_ID: ${{ vars.GOOGLE_ANALYTICS_ID }}
           VITE_FORM_ENDPOINT: ${{ vars.FORM_ENDPOINT }}
       - name: Upload artifact
