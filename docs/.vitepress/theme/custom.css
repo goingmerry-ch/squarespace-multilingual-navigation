@@ -1,0 +1,10 @@
+/* make title fit the sidebar width */
+a.title {
+    /* max-width: 300px; */
+    text-wrap: balance !important;
+    font-size: smaller;
+}
+
+div.VPNavBar.has-sidebar > .wrapper > .container > .title {
+    padding: 0 0 0 15px !important;
+}
