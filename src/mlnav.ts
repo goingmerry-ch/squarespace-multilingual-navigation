@@ -14,6 +14,10 @@ interface Alternate {
   nameNative: string
 }
 
+interface HomeNavigation {
+  [lang:string]: string
+}
+
 interface BaseNavigation {
   [lang:string]: {
     label: string 
@@ -22,14 +26,15 @@ interface BaseNavigation {
 }
 
 
-export type { BaseNavigation}
+export type { BaseNavigation, HomeNavigation}
 
 export default class MlNav {
+  homeLink: string
   links: Link[]
   alternates: Alternate[]
   current: Alternate
 
-  constructor(baseNavigation: BaseNavigation) {
+  constructor(baseNavigation: BaseNavigation, homeNavigation: HomeNavigation) {
     try {
       //@ts-ignore
       this.alternates = this.getAlternates()
@@ -46,6 +51,8 @@ export default class MlNav {
       if (!this.current) throw new Error('current page is not in alternates')
       this.links = baseNavigation[this.current.lang]
       if(!this.links) throw new Error('language not find in navigation')
+      this.homeLink = homeNavigation[this.current.lang]
+      if(!this.homeLink) throw new Error('no home set for language')
     } catch (e) {
       console.error(e)
     }
@@ -193,16 +200,13 @@ export default class MlNav {
     const mobileActions = document.querySelector('.header-display-mobile > .header-actions') as HTMLElement
     if (mobileActions) {
       mobileActions.style.display = "flex"
-      const elementRect = mobileActions.getBoundingClientRect();
-      const elementCenterX = elementRect.left + elementRect.width / 2;
-      const viewportWidth = window.innerWidth;
-      if (elementCenterX < viewportWidth / 2) {
-        // element is on the left
-        mobileActions.style.marginRight = "-4.5rem"
-      } else {
-        // element is on the right
-        mobileActions.style.marginLeft = "-4.5rem"
-      }
+      // const elementRect = mobileActions.getBoundingClientRect();
+      //mobileActions.style.width = (elementRect.width + 72) + 'px';
+      mobileActions.style.flex = "0"
+    }
+    const headerTitleNavWrapper = document.querySelector('.header-display-mobile > .header-title-nav-wrapper') as HTMLElement
+    if (headerTitleNavWrapper) {
+      headerTitleNavWrapper.style.flex = '1 0'
     }
 
     const switchers = document.querySelectorAll('.mlswitcher')
@@ -215,10 +219,22 @@ export default class MlNav {
       })
     })
 
+    // logo
+    const logoLinks = document.querySelectorAll('.header-mobile-logo > a, .header-title-logo > a')
+    logoLinks.forEach((logoLink) => {
+      logoLink.setAttribute('href', this.homeLink)
+    })
+
+    // force burger
+    const hiddenBurger = document.querySelector('.hide-burger.no-nav-links')
+    if (hiddenBurger) {
+      hiddenBurger.classList.remove('hide-burger', 'no-nav-links')
+    }
+
     // add rtl direction
     if (rtl.includes(this.current?.lang)) {
         // Define the tags you want to target
-        const tagsToTarget = ['span', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p', 'a', 'li']
+        const tagsToTarget = ['span', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p', 'a', 'li', '.header-nav']
       
         // Create a selector string for the tags
         const selector = tagsToTarget.join(',')
