@@ -14,6 +14,11 @@ title: Guide
 description: Step by step how to add multilingual navigation to a squarespace website
 ---
 
+<script setup>
+import packageInfo from '../../../../package.json';
+</script>
+
+
 # Code insertion
 
 
@@ -50,10 +55,9 @@ You can add this under Website > Website Tools > Code Injection
       fr: '/fr/acceuil'
     }
 
-  </script>
+</script>
 
 
-  <script type="module" src="https://unpkg.com/@goingmerry/squarespace-multilingual-navigation@1.0.5/dist/main.js"></script>
-  <style>
+<script type="module" src="https://unpkg.com/@goingmerry/squarespace-multilingual-navigation@{{ packageInfo.version }}/dist/main.js"></script>
 ```
 

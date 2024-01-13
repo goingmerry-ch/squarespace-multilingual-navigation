@@ -14,6 +14,10 @@ title: Guide
 description: Step by step how to add multilingual navigation to a squarespace website
 ---
 
+<script setup>
+import packageInfo from '../../../../package.json';
+</script>
+
 # Insertion de code
 
 Ajoutez ce fragment de code JavaScript à votre site.
@@ -21,7 +25,8 @@ Ajoutez ce fragment de code JavaScript à votre site.
 Si vous êtes membre premium :
 Vous pouvez l'ajouter dans Site Web > Outils du site > Injection de code
 
-```html
+
+```html-vue
 <script>
     // ce code gere les liens de la navigation en en-tete
     _MLNAV_BASE_NAVIGATION = {
@@ -47,10 +52,8 @@ Vous pouvez l'ajouter dans Site Web > Outils du site > Injection de code
       fr: '/fr/acceuil'
     }
 
-  </script>
+</script>
 
-
-  <script type="module" src="https://unpkg.com/@goingmerry/squarespace-multilingual-navigation@1.0.5/dist/main.js"></script>
-  <style>
+<script type="module" src="https://unpkg.com/@goingmerry/squarespace-multilingual-navigation@{{ packageInfo.version }}/dist/main.js"></script>
 ```
 
