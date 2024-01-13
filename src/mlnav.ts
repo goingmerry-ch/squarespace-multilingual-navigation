@@ -225,6 +225,11 @@ export default class MlNav {
       logoLink.setAttribute('href', this.homeLink)
     })
 
+    // force burger
+    const hiddenBurger = document.querySelector('.hide-burger.no-nav-links')
+    if (hiddenBurger) {
+      hiddenBurger.classList.remove('hide-burger', 'no-nav-links')
+    }
 
     // add rtl direction
     if (rtl.includes(this.current?.lang)) {
