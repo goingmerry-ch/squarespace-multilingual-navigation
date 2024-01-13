@@ -56,7 +56,9 @@ export default {
       `window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', '${process.env.VITE_GOOGLE_ANALYTICS_ID}');`
+      gtag('config', '${process.env.VITE_GOOGLE_ANALYTICS_ID}', {
+        server_container_url: 'https://${ process.env.VITE_GOOGLE_TAG_MANAGER }',
+      });`
     ] : []
   ],
   async transformHead({ pageData }) {
