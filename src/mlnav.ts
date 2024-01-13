@@ -234,7 +234,7 @@ export default class MlNav {
     // add rtl direction
     if (rtl.includes(this.current?.lang)) {
         // Define the tags you want to target
-        const tagsToTarget = ['span', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p', 'a', 'li']
+        const tagsToTarget = ['span', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p', 'a', 'li', '.header-nav']
       
         // Create a selector string for the tags
         const selector = tagsToTarget.join(',')

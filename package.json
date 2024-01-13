@@ -1,6 +1,6 @@
 {
   "name": "@goingmerry/squarespace-multilingual-navigation",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "source": "src/index.ts",
   "browser": "dist/main.js",
   "files": [
