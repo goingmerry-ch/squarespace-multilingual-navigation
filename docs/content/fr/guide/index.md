@@ -18,23 +18,28 @@ description: Étape par étape comment ajouter une navigation multilingue à un 
 
 ## Prérequis
 
-Plan d'essai ou plan Business ou supérieur (il n'y a pas moyen de contourner cela car vous aurez besoin de JavaScript)
+/ Plan d'essai ou plan Business ou supérieur (il n'y a pas moyen de contourner cela car vous aurez besoin de JavaScript)
+- Squarespace version 7.1
 
+## Limitations
 
-## Démarrage rapide et aperçu
+- Pied de page
+- Blog
 
-Vous pouvez suivre le démarrage rapide pour essayer cet outil en 5 minutes et voir s'il répond à vos besoins.
-Si cela ne fonctionne pas, j'apprécierais vraiment vos retours. Également heureux de vous aider à configurer. Voir [contacts](./contact).
 
 
 ## Étapes de mise en œuvre
 
-Il y a 3 étapes pour intégrer ceci :
+Il y a 3 étapes pour intégrer cet outil :
 1. [Préparer le site](./prepareation)
 2. [Mettre à jour les alternatives linguistiques](./hreflangs)
 3. [Insérer le code](./injection)
 3. [Vérifier que tout fonctionne](./checks)
 
+## Démarrage rapide et aperçu
+
+Vous pouvez essayer de suivre les étapes pour une seule page x une langue et voir comment cela vous convient.
+Si cela ne fonctionne pas, j'apprécierais vraiment vos retours. Également heureux de vous aider à configurer si quelque chose n'est pas clair. Voir [contacts](./contact).
 
 
 ## Pourquoi pas...?
@@ -56,11 +61,16 @@ Je n'ai pas pu trouver un véritable commutateur de langue, plutôt prendre le r
 Enfin, ce sont d'énormes extraits de code, seul un programmeur peut lire et comprendre.
 Il n'y a pas de communauté pour poser des questions.
 
+### Payer quelqu'un pour le faire
+
+Premièrement, ces services sont chers. Ils utilisent probablement du code également, font cela en 15 minutes et vous facturent 100 EUR/USD.
+Deuxièmement, ils pourraient le faire avec tous les inconvénients des codes des autres gars. Donc, vous devez vérifier correctement quelques démos.
+Eh bien, si tout est bien fait, je suppose que c'est bien et peut-être que certains prestataires ont des prix plus raisonnables. Mais c'est un cas unique. Comment maintenez-vous cela après ?
 
 
 ## Pourquoi cet outil ?
 
-1. Il est gratuit. Gratuit comme dans "bière gratuite" et comme dans "liberté d'expression". Je ne pourrais pas retirer le lien principal distribué ici même si je le voulais. Une fois qu'une version est publiée, elle est à jamais mise en cache sur Internet. Le code est public, donc tout le monde peut le copier.
+1. Il est gratuit et libre. Je ne pourrais pas retirer le lien principal distribué ici même si je le voulais. Une fois qu'une version est publiée, elle est à jamais mise en cache sur Internet. Le code est public, donc tout le monde peut le copier.
 2. Il est facile à maintenir. Vous devriez être capable de comprendre et de modifier le code même si vous ne savez rien sur JavaScript. J'ai testé cela avec ma femme.
 3. Il n'y a pas de scintillement ni de lien caché. La navigation principale est rendue. Aucun lien n'est caché pour confondre les moteurs de recherche.
 4. Il a pour prérequis d'avoir des alternatives linguistiques bien entretenues pour le SEO. Ainsi, vous bénéficiez à la fois des avantages pour l'utilisateur et pour le SEO.

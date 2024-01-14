@@ -21,6 +21,10 @@ description: Step by step how to add multilingual navigation to a squarespace we
 - Trial plan or Business plan or higher (there is no way around it because you will need javascript)
 - Squarespace version 7.1
 
+## Limitations
+
+- Footer
+- Blog
 
 
 ## Implementation Steps
@@ -60,7 +64,7 @@ There is no community around to ask questions.
 
 
 
-### Pay somebody to do it for me
+### Pay somebody to do it
 
 First these services are expensive. They probably use some code as well, do this in 15 min to do it and charge you 100 EUR/USD.
 Second, they might do it with all the inconveniences of the other guys's codes. So you need to properly check some demos
