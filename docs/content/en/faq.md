@@ -6,7 +6,7 @@ alternates:
   - hreflang: en
     href: en/faq
   - hreflang: fr
-    href: fr/questions-frequentes
+    href: fr/faq
   - hreflang: x-default
     href: en/faq
 

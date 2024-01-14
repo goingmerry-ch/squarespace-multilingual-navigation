@@ -38,7 +38,7 @@ export default {
       themeConfig: {
         nav: [
           { text: 'Guide', link: '/fr/guide/' },
-          { text: 'Questions Frequentes', link: '/fr/questions-frequentes' },
+          { text: 'Questions Frequentes', link: '/fr/faq' },
           { text: 'Github', link: 'https://github.com/goingmerry-ch/squarespace-multilingual-navigation' }
         ],
       }
@@ -86,10 +86,10 @@ export default {
         {
           text: 'Guide',
           items: [
-            { text: 'Quick Start', link: '/en/guide/1-quick-start' },
-            { text: 'Preparation', link: '/en/guide/2-prepare-squarespace-site' },
-            { text: 'Code Insertion', link: '/en/guide/3-insert-code-squarespace-site' },
-            { text: 'Alternates', link: '/en/guide/4-add-alternate-languages' }
+            { text: 'Quick Start', link: '/en/guide/1-start' },
+            { text: 'Preparation', link: '/en/guide/2-preparation' },
+            { text: 'Code Insertion', link: '/en/guide/3-injection' },
+            { text: 'Alternates', link: '/en/guide/4-hreflangs' }
           ]
         }
       ],
@@ -97,10 +97,10 @@ export default {
         {
           text: 'Guide',
           items: [
-            { text: 'Demarrage Rapide', link: '/fr/guide/1-demarrage-rapide' },
-            { text: 'Preparation', link: '/fr/guide/2-preparation-site-squarespace' },
-            { text: 'Insertion', link: '/fr/guide/3-inserer-code-squarespace' },
-            { text: 'Alternates', link: '/fr/guide/4-ajouter-langues-alternatives' }
+            { text: 'Demarrage Rapide', link: '/fr/guide/1-start' },
+            { text: 'Preparation', link: '/fr/guide/2-preparation' },
+            { text: 'Insertion', link: '/fr/guide/3-injection' },
+            { text: 'Alternates', link: '/fr/guide/4-hreflangs' }
           ]
         }
       ]

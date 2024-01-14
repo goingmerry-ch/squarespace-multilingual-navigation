@@ -4,11 +4,11 @@ layout: doc
 lang: en
 alternates:
   - hreflang: en
-    href: en/guide/2-insert-code-squarespace-site
+    href: en/guide/3-injection
   - hreflang: fr
-    href: fr/guide/2-inserer-code-squarespace
+    href: fr/guide/3-injection
   - hreflang: x-default
-    href: en/guide/2-insert-code-squarespace-site
+    href: en/guide/3-injection
 
 title: Guide
 description: Step by step how to add multilingual navigation to a squarespace website
@@ -18,17 +18,20 @@ description: Step by step how to add multilingual navigation to a squarespace we
 import packageInfo from '../../../../package.json';
 </script>
 
-# Insertion de code
 
-Ajoutez ce fragment de code JavaScript à votre site.
-
-Si vous êtes membre premium :
-Vous pouvez l'ajouter dans Site Web > Outils du site > Injection de code
+# Code insertion
 
 
-```html-vue
+Add this javascript snippet to you site.
+
+If you are a premimum member:
+You can add this under Website > Website Tools > Code Injection
+
+
+
+```html
 <script>
-    // ce code gere les liens de la navigation en en-tete
+    // this manages the header navigation links
     _MLNAV_BASE_NAVIGATION = {
         en: [
           { label: 'Home', href: '/en/home' },
@@ -46,13 +49,14 @@ Vous pouvez l'ajouter dans Site Web > Outils du site > Injection de code
         ]
     }
 
-    // ce code gère le lien du logo (vers la homepage de la langue)
+    // this manages the logo link  back to the homepage
     _MLNAV_HOME = {
       en: '/en/home',
       fr: '/fr/acceuil'
     }
 
 </script>
+
 
 <script type="module" src="https://unpkg.com/@goingmerry/squarespace-multilingual-navigation@{{ packageInfo.version }}/dist/main.js"></script>
 ```

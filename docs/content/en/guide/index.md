@@ -24,7 +24,7 @@ description: Step by step how to add multilingual navigation to a squarespace we
 
 ## Quick Start and preview
 
-You can follow the [quick start](./1-quick-start.md) to try out this tool in few minutes and see if it works for your needs.
+You can follow the [quick start](./1-start.md) to try out this tool in few minutes and see if it works for your needs.
 If it does not work, I would super appreciate the feedback. Also happy to help you get set-up. See [contacts](./contact).
 
 
