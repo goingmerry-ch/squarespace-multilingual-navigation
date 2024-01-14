@@ -30,9 +30,11 @@ Si cela ne fonctionne pas, j'apprécierais vraiment vos retours. Également heur
 ## Étapes de mise en œuvre
 
 Il y a 3 étapes pour intégrer ceci :
-1. [Préparer le site](./prepare-squarespace-site)
-2. [Insérer le code](./insert-code-squarespace-site)
-3. [Mettre à jour les alternatives linguistiques]
+1. [Préparer le site](./prepareation)
+2. [Mettre à jour les alternatives linguistiques](./hreflangs)
+3. [Insérer le code](./injection)
+3. [Vérifier que tout fonctionne](./checks)
+
 
 
 ## Pourquoi pas...?

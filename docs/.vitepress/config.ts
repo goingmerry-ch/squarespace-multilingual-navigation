@@ -86,10 +86,11 @@ export default {
         {
           text: 'Guide',
           items: [
-            { text: 'Quick Start', link: '/en/guide/1-start' },
-            { text: 'Preparation', link: '/en/guide/2-preparation' },
-            { text: 'Code Insertion', link: '/en/guide/3-injection' },
-            { text: 'Alternates', link: '/en/guide/4-hreflangs' }
+            { text: 'Quick Start', link: '/en/guide/start' },
+            { text: 'Preparation', link: '/en/guide/preparation' },
+            { text: 'Alternates', link: '/en/guide/hreflangs' },
+            { text: 'Code Insertion', link: '/en/guide/injection' }
+            
           ]
         }
       ],
@@ -97,10 +98,10 @@ export default {
         {
           text: 'Guide',
           items: [
-            { text: 'Demarrage Rapide', link: '/fr/guide/1-start' },
-            { text: 'Preparation', link: '/fr/guide/2-preparation' },
-            { text: 'Insertion', link: '/fr/guide/3-injection' },
-            { text: 'Alternates', link: '/fr/guide/4-hreflangs' }
+            { text: 'Demarrage Rapide', link: '/fr/guide/start' },
+            { text: 'Preparation', link: '/fr/guide/preparation' },
+            { text: 'Alternates', link: '/fr/guide/hreflangs' },
+            { text: 'Insertion', link: '/fr/guide/injection' },
           ]
         }
       ]

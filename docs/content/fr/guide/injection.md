@@ -4,11 +4,11 @@ layout: doc
 lang: en
 alternates:
   - hreflang: en
-    href: en/guide/3-injection
+    href: en/guide/injection
   - hreflang: fr
-    href: fr/guide/3-injection
+    href: fr/guide/injection
   - hreflang: x-default
-    href: en/guide/3-injection
+    href: en/guide/injection
 
 title: Guide
 description: Step by step how to add multilingual navigation to a squarespace website

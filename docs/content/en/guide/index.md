@@ -22,18 +22,21 @@ description: Step by step how to add multilingual navigation to a squarespace we
 - Squarespace version 7.1
 
 
-## Quick Start and preview
-
-You can follow the [quick start](./1-start.md) to try out this tool in few minutes and see if it works for your needs.
-If it does not work, I would super appreciate the feedback. Also happy to help you get set-up. See [contacts](./contact).
-
 
 ## Implementation Steps
 
 There are 3 steps to integrate this:
-1. [Prepare the site](./prepare-squarespace-site)
-2. [Insert the code] (./insert-code-squarespace-site)
-3. [Update the language alternates]
+1. [Prepare the site](./preparation)
+2. [Update the language alternates](./hreflangs)
+3. [Insert the code](./insection)
+4. [Check the website](./checks)
+
+
+
+## Quick Start and preview
+
+You can try following the steps for only one page x one language and see how you like it.  
+If it does not work, I would super appreciate the feedback. Also happy to help you get set-up if anything unclear. See [contacts](./contact).
 
 
 ## Why not...?

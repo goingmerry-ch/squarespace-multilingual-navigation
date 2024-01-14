@@ -4,11 +4,11 @@ layout: doc
 lang: en
 alternates:
   - hreflang: en
-    href: en/guide/3-injection
+    href: en/guide/injection
   - hreflang: fr
-    href: fr/guide/3-injection
+    href: fr/guide/injection
   - hreflang: x-default
-    href: en/guide/3-injection
+    href: en/guide/injection
 
 title: Guide
 description: Step by step how to add multilingual navigation to a squarespace website
@@ -21,15 +21,15 @@ import packageInfo from '../../../../package.json';
 
 # Code insertion
 
+You will need to be able to insert a code snippet in your site.  
 
-Add this javascript snippet to you site.
+At the time of writing, this is only possible for premium subscriptions.
 
-If you are a premimum member:
 You can add this under Website > Website Tools > Code Injection
 
 
 
-```html
+```html-vue
 <script>
     // this manages the header navigation links
     _MLNAV_BASE_NAVIGATION = {
